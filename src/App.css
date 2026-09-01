@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@600&family=Titillium+Web:wght@300;400;700&display=swap");
+
+.Center {
+  text-align: center;
+}
+
+.App-logo {
+  align-items: center;
+  text-align: center;
+  height: 40vmin;
+  pointer-events: none;
+  position: absolute;
+}
+
+section {
+  position: relavtive;
+  height: 100vh;
+  width: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.night-sky {
+  height: 100%;
+  background-image: url("./Assets/fallingStar.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+
+/* .night-sky {
+  height: 900px;
+  background-image: url("./Assets/sunset.jpeg");
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+} */
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  padding: 70px;
+  text-align: center;
+}
+
+.stars {
+  height: 100vh;
+  background-image: url("./Assets/stars.png");
+  background-position: top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.center-text-style {
+  font-size: 100px;
+  color: white;
+}
+
+.icons {
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  /* display: inline-block; */
+  margin-right: 0.5em;
+}
+
+.icons:hover {
+  box-shadow: 0 0 12px 4px rgba(0, 140, 186, 0.5);
+  background-color: rgba(0, 140, 186, 0.5);
+}
+
+.child {
+  width: 1000px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  margin: -50px 0 0 -350px;
+  font-size: 50px;
+  color: white;
+  font-family: "Onest", sans-serif;
+  /* font-family: 'Titillium Web', sans-serif; */
+  text-align: center;
+}
+
+.Home-app {
+  background-image: url("./Assets/cyberpunk.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.About-app {
+  background-image: url("./Assets/purpleSky.jpg");
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#toggler,
+.navbar label {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #toggler:checked ~ .menu {
+    max-height: 100%;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

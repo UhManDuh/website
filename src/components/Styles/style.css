@@ -1,0 +1,139 @@
+:root {
+  --navyBlue: #29335c;
+  --lightBlue: #5767aa;
+  --red: #db2b39;
+  --textColor: #eee;
+  --blue: #12d2db;
+  --white: #fcf2fa;
+  --purple: #912a7eaa;
+  --purple-blc: #230622dd;
+  --shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.3);
+  --navColor: linear-gradient(
+    to right,
+    rgba(44, 124, 158, 0.6) 5%,
+    rgba(6, 11, 35, 0.9)
+  );
+}
+
+.Sharingan {
+  padding-top: 22%;
+  text-align: center;
+  font-size: 30px;
+  color: white;
+}
+
+.StyledFontSize {
+  padding-top: 10%;
+  padding-left: 5%;
+  font-size: calc(60px + 2vmin);
+  text-align: left;
+  color: white;
+}
+
+.StyledSharingan {
+  text-align: center;
+  padding-right: 20%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  position: fixed;
+  background: var(--navColor);
+  box-shadow: var(--shadow);
+  height: 80px;
+  width: 100%;
+}
+
+nav ul {
+  float: right;
+  margin-right: 80px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+}
+nav ul li a {
+  color: var(--white);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 13px;
+  text-transform: lowercase;
+}
+a.active,
+a:hover {
+  background: var(--purple);
+  transition: 0.5s;
+}
+.checkbtn {
+  line-height: 80px;
+  font-size: 30px;
+  float: right;
+  cursor: pointer;
+  margin-right: 40px;
+  display: none;
+}
+.checkbtn i {
+  color: var(--white);
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.5s ease;
+}
+.checkbtn i:hover {
+  background: var(--purple);
+}
+#check {
+  display: none;
+}
+
+/* responsive code */
+@media (max-width: 952px) {
+  /* table mode */
+  label.logo {
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 858px) {
+  /* mobile mode */
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: var(--purple-blc);
+    top: 80px;
+    left: -100%;
+    padding-top: 80px;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+  nav ul li {
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a.active,
+  a:hover {
+    background: none;
+    color: var(--blue);
+    text-shadow: 0 10px 15px var(--blue);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
