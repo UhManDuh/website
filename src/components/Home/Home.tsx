@@ -1,13 +1,7 @@
-import "../Styles/style.css";
+import "./Home.css";
 
 function Home() {
-  return (
-    <header className="Home-app">
-      <h1 style={{ fontWeight: "normal" }}>
-        <div className="Center"></div>
-      </h1>
-    </header>
-  );
+  return <section className="scene" aria-hidden="true" />;
 }
 
 export default Home;

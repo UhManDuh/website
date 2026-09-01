@@ -1,0 +1,20 @@
+.about {
+  background-image: url("../../Assets/purpleSky.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.about-heading {
+  padding-top: 10%;
+  padding-left: 5%;
+  font-size: calc(60px + 2vmin);
+  text-align: left;
+  color: white;
+}
+
+.about-hobbies {
+  color: #3caaae;
+  font-weight: bold;
+}

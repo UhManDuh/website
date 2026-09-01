@@ -1,26 +1,33 @@
+import { useState } from "react";
 import { FaBars } from "react-icons/fa";
-import CustomLink from "../CustomLink";
-import "../Styles/style.css";
+import { NAV_ITEMS } from "../../constants";
+import "./NavBar.css";
 
-function NavBarNew() {
+function NavBar() {
+  const [open, setOpen] = useState(false);
+
   return (
-    <>
-      <nav>
-        <input type="checkbox" id="check" />
-        <label htmlFor="check" className="checkbtn">
-          <i className="bx bx-menu">
-            <FaBars />
-          </i>
-        </label>
-        <ul>
-          <CustomLink to="/home">Home</CustomLink>
-          <CustomLink to="/about">About</CustomLink>
-          <CustomLink to="/resume">resume</CustomLink>
-          <CustomLink to="/contact">contact</CustomLink>
-        </ul>
-      </nav>
-    </>
+    <nav>
+      <button
+        type="button"
+        className="menu-toggle"
+        aria-label="Toggle menu"
+        aria-expanded={open}
+        onClick={() => setOpen((isOpen) => !isOpen)}
+      >
+        <FaBars />
+      </button>
+      <ul className={open ? "is-open" : undefined}>
+        {NAV_ITEMS.map((item) => (
+          <li key={item.href}>
+            <a href={item.href} onClick={() => setOpen(false)}>
+              {item.label}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
 
-export default NavBarNew;
+export default NavBar;

@@ -1,0 +1,7 @@
+.scene {
+  background-image: url("../../Assets/cyberpunk.jpg");
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}

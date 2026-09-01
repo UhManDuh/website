@@ -1,0 +1,41 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.night-sky {
+  height: 100%;
+  background-image: url("../../Assets/fallingStar.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-copy {
+  width: min(1000px, 90vw);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(28px, 5vw, 50px);
+  color: white;
+  font-family: "Onest", sans-serif;
+  text-align: center;
+}
+
+.hero-links {
+  margin-top: 0.4em;
+}
+
+.icons {
+  border-radius: 4px;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.5em;
+}
+
+.icons:hover {
+  box-shadow: 0 0 12px 4px rgba(0, 140, 186, 0.5);
+  background-color: rgba(0, 140, 186, 0.5);
+}
