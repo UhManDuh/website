@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.42956dab.css",
+    "main.js": "/website/static/js/main.78efdbf5.js",
+    "static/media/cyberpunk.jpg": "/website/static/media/cyberpunk.8359034833c2133da1f0.jpg",
+    "static/media/stars.png": "/website/static/media/stars.ce57d957eee8798e54fe.png",
+    "static/media/fallingStar.gif": "/website/static/media/fallingStar.481482dcf623ea920c53.gif",
+    "static/media/squirtle.png": "/website/static/media/squirtle.476da667b0c9b8bda857.png",
+    "static/media/charmander.png": "/website/static/media/charmander.ddf40c7eb72f4291e7ac.png",
+    "static/media/purpleSky.jpg": "/website/static/media/purpleSky.2cfa36049a8e07ab6480.jpg",
+    "static/media/bulbasaur.png": "/website/static/media/bulbasaur.4a6974e57f9ce1575563.png",
+    "index.html": "/website/index.html",
+    "main.42956dab.css.map": "/website/static/css/main.42956dab.css.map",
+    "main.78efdbf5.js.map": "/website/static/js/main.78efdbf5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.42956dab.css",
+    "static/js/main.78efdbf5.js"
+  ]
+}
